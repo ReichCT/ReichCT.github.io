@@ -1,4 +1,4 @@
-# Notes on Piezoresistive Flexible Pressure Sensor
+# Notes
 
 ## Overview
 
