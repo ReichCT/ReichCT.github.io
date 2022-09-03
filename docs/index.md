@@ -1,7 +1,7 @@
 # Homepage
 
-## Boyi Zhu 朱博医
+## Boyi Zhu
 
-Zhejiang university & Tsinghua university.
+Zhejiang University & Tsinghua university.
 
-Currently my research interests focus on NLP.
+# Notes
