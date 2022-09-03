@@ -2,7 +2,7 @@ site_name: Kilbert's Home
 theme:
   name: material
   font:
-    code: Noto Serif
+    code: IBM Plex Serif
   palette: 
     # Palette toggle for light mode
     - primary: blue
