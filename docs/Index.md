@@ -1,6 +1,6 @@
 # Homepage
 
-## Boyi Zhu
+## Kilbert Boyi Zhu
 
 Bachelor of Mechanical Engineering, @ Zhejiang University.
 
