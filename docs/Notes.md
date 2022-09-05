@@ -49,7 +49,7 @@ $$
 [1] Hollow-Structured Graphene–Silicone-Composite-Based Piezoresistive Sensors: Decoupled Property Tuning and Bending Reliability, **DOI: 10.1002/adma.201702675**
 [2] An ultra-sensitive resistive pressure sensor based on hollow-sphere microstructure induced elasticity in conducting polymer film, **DOI: 10.1038/ncomms4002**
 
-接触电阻对提升相对灵敏度有决定性作用，因为它可以获得非常大的初始电阻。**理想条件下，没有施加压力时接触电阻应当为无穷大。**但由于重力或封装等原因，会产生一定的接触通路，降低了初始电阻。从这个角度而言，**应该减少材料密度和封装应力**。
+接触电阻对提升相对灵敏度有决定性作用，因为它可以获得非常大的初始电阻。**理想条件下，没有施加压力时接触电阻应当为无穷大。** 但由于重力或封装等原因，会产生一定的接触通路，降低了初始电阻。从这个角度而言，**应该减少材料密度和封装应力**。
 
 接触电导一般可以表示为:
 $$
@@ -59,6 +59,8 @@ $$
 $$
 \sum G_{contact} = h*A_{contact} \tag{1.6}
 $$
+
+接触表面的形状设计对于传感器的灵敏度和测量区间具有重大意义。对于表面
 
 ## Materials
 
