@@ -1,0 +1,947 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.4">
+    
+    
+      
+        <title>压阻传感器 - Kilbert's Home</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6b80c2a2.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CIBM+Plex+Serif:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"IBM Plex Serif"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Kilbert&#39;s Home" class="md-header__button md-logo" aria-label="Kilbert's Home" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Kilbert's Home
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              压阻传感器
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Homepage
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      压阻传感器
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../%E6%9C%80%E4%BD%B3%E5%8E%8B%E9%98%BB%E6%9B%B2%E9%9D%A2%E8%AE%BE%E8%AE%A1/" class="md-tabs__link">
+      最佳压阻曲面设计
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Kilbert&#39;s Home" class="md-nav__button md-logo" aria-label="Kilbert's Home" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Kilbert's Home
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Homepage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          压阻传感器
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        压阻传感器
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principles" class="md-nav__link">
+    Principles
+  </a>
+  
+    <nav class="md-nav" aria-label="Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    灵敏度的计算公式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    电阻/电导随压力变化的原因
+  </a>
+  
+    <nav class="md-nav" aria-label="电阻/电导随压力变化的原因">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    体压阻效应
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    接触电阻/导
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    总电导和压力的关系
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials" class="md-nav__link">
+    Materials
+  </a>
+  
+    <nav class="md-nav" aria-label="Materials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    敏感层
+  </a>
+  
+    <nav class="md-nav" aria-label="敏感层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    导电聚合物
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    金属材料
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    碳基材料
+  </a>
+  
+    <nav class="md-nav" aria-label="碳基材料">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cnts" class="md-nav__link">
+    碳纳米管CNTs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphene" class="md-nav__link">
+    石墨烯Graphene
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    电极层
+  </a>
+  
+    <nav class="md-nav" aria-label="电极层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hydrogel" class="md-nav__link">
+    水凝胶hydrogel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    金属材料
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    基于纤维的材料
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    基底层
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microstructures" class="md-nav__link">
+    Microstructures
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%80%E4%BD%B3%E5%8E%8B%E9%98%BB%E6%9B%B2%E9%9D%A2%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        最佳压阻曲面设计
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principles" class="md-nav__link">
+    Principles
+  </a>
+  
+    <nav class="md-nav" aria-label="Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    灵敏度的计算公式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    电阻/电导随压力变化的原因
+  </a>
+  
+    <nav class="md-nav" aria-label="电阻/电导随压力变化的原因">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    体压阻效应
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    接触电阻/导
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    总电导和压力的关系
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials" class="md-nav__link">
+    Materials
+  </a>
+  
+    <nav class="md-nav" aria-label="Materials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    敏感层
+  </a>
+  
+    <nav class="md-nav" aria-label="敏感层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    导电聚合物
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    金属材料
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    碳基材料
+  </a>
+  
+    <nav class="md-nav" aria-label="碳基材料">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cnts" class="md-nav__link">
+    碳纳米管CNTs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphene" class="md-nav__link">
+    石墨烯Graphene
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    电极层
+  </a>
+  
+    <nav class="md-nav" aria-label="电极层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hydrogel" class="md-nav__link">
+    水凝胶hydrogel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    金属材料
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    基于纤维的材料
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    基底层
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microstructures" class="md-nav__link">
+    Microstructures
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="_1">压阻传感器<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>柔性压力传感器是电子皮肤的重要组成部分，是形成触觉感知的关键环节。柔性压力传感器的基本原理包括电容式、压电式、摩擦电式和**压阻式**。</p>
+<p>压阻式压力传感器具有以下显著优点：
+1. 传感机理简单
+2. 构建结构简单
+3. 读取电路简单（基本上只需要直流电源+电流表即可）
+4. 低功耗：和电容比？</p>
+<h2 id="principles">Principles<a class="headerlink" href="#principles" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Outline：</strong>
+1.为了提高灵敏度，电极电阻应尽可能减小至0
+2.在上述条件下，灵敏度和初始电阻与电导对压力导数的乘积成正比
+3.为了提高灵敏度，还应该尽可能增大初始电阻
+4.利用接触电阻提高初始电阻，并尽可能减少材料的密度和封装应力
+5.愚以为，利用体材料电阻率变化可以圆滑接触电阻的阶梯型和非线性，提高线性度？</p>
+</blockquote>
+<h3 id="_2">灵敏度的计算公式<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>假设系统总电阻为<span class="arithmatex">\(R\)</span>，<span class="arithmatex">\(R\)</span>由两部分组成，分别是随着压力<span class="arithmatex">\(p\)</span>变化的敏感层电阻<span class="arithmatex">\(R_a(p)\)</span>和基本保持恒定的电极电阻<span class="arithmatex">\(R_e\)</span>：
+$$
+R = R_a(p) + R_e \tag{1.1}
+$$
+由于压阻传感器往往采用电流作为输出参数，即：
+$$
+I_{out} = \frac{U_0}{R_a(p) + R_e} \tag{1.2}
+$$</p>
+<blockquote>
+<p>以下文章均采用电流作为输出量：
+以下少数采用电阻作为输出量：</p>
+</blockquote>
+<p>可以得到其（相对）灵敏度为：
+$$
+S = \frac{1}{I_0}\frac{dI_{out}}{dp} = \frac{R_0}{R^2}\frac{dR_a}{dp} \tag{1.3}
+$$
+为了提高灵敏度，首先要**减少电极电阻（至0）<strong>。当<span class="arithmatex">\(R_e=0\)</span>时，灵敏度可以转化为：
+$$
+S = \frac{1}{I_0}\frac{dI_{out}}{dp} = R_0*\frac{dG}{dp} \tag{1.4}
+$$
+其中，<span class="arithmatex">\(G\)</span>表示电导，即总电阻的倒数。**灵敏度和初始电阻与电导对压力导数的乘积成正比。</strong> 因此，为了提高灵敏度，<strong>其次应当增加初始电阻，并设法提高电导对压力的变化。</strong></p>
+<h3 id="_3">电阻/电导随压力变化的原因<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>敏感层电阻随压力的变化主要由三部分组成：
+1. 几何尺寸的变化
+2. 体压阻效应：电阻率的变化
+3. 接触电阻/导</p>
+<h4 id="_4">体压阻效应<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<p>利用体压阻效应的传感器较为传统。<strong>电阻率的变化往往源自于两方面：应力和应变。</strong> 应力导致材料本身的能带结构等发生变化，是从根本的导电机理上改变电阻率，<strong>往往可以采用设计多孔结构制造应力集中的办法来提高响应灵敏度</strong>。应变导致体材料内的导电物质发生分布重构，本质上也是接触电阻形成新的导电通路，<strong>因此往往可以采用降低体材料模量的方式来提高在相同压力下的变形</strong>。体压阻效应对应的电导写作<span class="arithmatex">\(G_{bulk}\)</span>.</p>
+<blockquote>
+<p>一些体压阻效应的例子：
+[1] Hollow-Structured Graphene–Silicone-Composite-Based Piezoresistive Sensors: Decoupled Property Tuning and Bending Reliability, <strong>DOI: 10.1002/adma.201702675</strong>
+[2] An ultra-sensitive resistive pressure sensor based on hollow-sphere microstructure induced elasticity in conducting polymer film, <strong>DOI: 10.1038/ncomms4002</strong></p>
+</blockquote>
+<h4 id="_5">接触电阻/导<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p>接触电阻对提升相对灵敏度有决定性作用，因为它可以获得非常大的初始电阻。<strong>理想条件下，没有施加压力时接触电阻应当为无穷大。</strong> 但由于重力或封装等原因，会产生一定的接触通路，降低了初始电阻。从这个角度而言，<strong>应该减少材料密度和封装应力</strong>。</p>
+<p>接触电导一般可以表示为:
+$$
+G_{contact} = h(p)*A \tag{1.5}
+$$
+其中，<span class="arithmatex">\(h(p)\)</span>表示接触面电导率，对于不同的材料有许多不同的模型（见COMSOL）。目前我们采用定值的模型，即<span class="arithmatex">\(h=h_0=\text{const}\)</span>。接触通路形成后，总电导为各个通路电导的和。由于面电导率恒定，所以接触总电导和接触面积成正比，可以表示为：
+$$
+\sum G_{contact} = h_0*A_{contact} \tag{1.6}
+$$</p>
+<p>接触表面的形状设计对于传感器的灵敏度和测量区间具有重大意义，这一问题留待后面详细讨论。</p>
+<h4 id="_6">总电导和压力的关系<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<p>对于同时具有体压阻效应和接触电阻效应的压阻传感器，可以提出其一般性的总电导公式为：
+$$
+G = (G_{contact}<sup -1="-1">{-1}+G_{bulk}</sup>)^{-1} \tag{1.7}
+$$
+将其对压力求导得到：
+$$
+\frac{dG}{dp} = G<sup>2(\frac{1}{G_{contact}</sup>2}\frac{dG_{contact}}{dp}+\frac{1}{G_{bulk}^2}\frac{dG_{bulk}}{dp}) \tag{1.8}
+$$
+一般而言，在压力较小时，<span class="arithmatex">\(G_{contact}\)</span>很小，并且其导数很大，所以(1.8)可以近似为：
+$$
+\frac{dG}{dp} \approx \frac{dG_{contact}}{dp} = h_0*\frac{dA_{contact}}{dp}, \text{when <span class="arithmatex">\(p\)</span> is small} \tag{1.9}
+$$
+式(1.9)指出，在传感器低压力工作区的灵敏度基本完全由接触电阻决定。<strong>因此为了提高灵敏度，降低传感器的最小检测极限，接触电阻的设计（表面形态）就显得至关重要。</strong></p>
+<p>相反，当施加压力较大时，此时接触电导较大，且饱和几乎保持不变，所以(1.8)可以近似为：
+$$
+\frac{dG}{dp} \approx \frac{dG_{bulk}}{dp}, \text{when <span class="arithmatex">\(p\)</span> is large} \tag{1.10}
+$$</p>
+<p>式(1.10)指出，在传感器高压力工作区的灵敏度基本完全由体压阻效应决定。<strong>因此为了尽可能延长传感器工作区间，在宽测量区间内也具有较高的灵敏度，就必须为其设计一个具有高灵敏度的体压阻效应的环节。</strong></p>
+<h2 id="materials">Materials<a class="headerlink" href="#materials" title="Permanent link">&para;</a></h2>
+<p>压阻传感器的三个最重要组成部分是：敏感层、电极、基底。对各个部分的性能要求主要从以下四个方面进行考量：
+1. 电学性质
+2. 力学性质
+3. 化学稳定性
+4. 工艺性质（规模制造可能性）</p>
+<p>下面分别介绍材料。</p>
+<h3 id="_7">敏感层<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>敏感层是压阻传感器中最重要的核心部分，对电导随压力变化函数起决定性作用。</p>
+<p>电学性质是其最重要的考察目标。对于接触电阻的部分，应当希望敏感层的导电性尽可能的好（较大的<span class="arithmatex">\(h_0\)</span>），从而产生较大的接触与否的电阻变化。对于体压阻效应而言，应当希望敏感层具有较高的初始电阻以贡献于<span class="arithmatex">\(R_0\)</span>，而同时具有较高的压阻系数，以贡献于<span class="arithmatex">\(dG/dp\)</span>。其它性质应该与电学性质进行制衡。</p>
+<p>主要有以下几种材料：
+1. 导电聚合物
+2. 金属材料
+3. 碳基材料</p>
+<h4 id="_8">导电聚合物<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>柔性的、pi共轭的、碳基导电聚合物是已显示出巨大前景的软器件制造的材料。诸如polymers poly-pyrrole (PPY), poly(3,4-ethylenedioxythiophene)
+poly(styrenesulfonate) (PEDOT:PSS), polyaniline (PANI)等半导体和导电聚合物以及它们的衍生物是最常用于柔性电子产品制造的聚合物。</p>
+<p>这类材料与传统的溶液加工技术兼容，因此它们可以通过喷涂和打印技术进行加工，并提供低成本、大面积的器件阵列。此外，与无机材料相比，它们的机械性能更接近于柔软的人体皮肤，使它们成为实施类肤装置设计的理想选择。</p>
+<p>然而，它们的稳定性和电子性能还不能与金属、石墨烯、CNT和其他无机导体或半导体相比。</p>
+<p>采用导电聚合物作为敏感材料的例子：
+[1] An ultra-sensitive resistive pressure sensor based on hollow-sphere microstructure induced elasticity in conducting polymer film, <strong>DOI: 10.1038/ncomms4002</strong></p>
+</blockquote>
+<h4 id="_9">金属材料<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>金属材料，如metal nanoparticles, metal nanowires, metal nano-thin films, and liquid metal是柔性器件中应用最广泛的材料。<strong>这些材料由于其出色的导电性，可以作为敏感材料和电极使用。</strong> 值得注意的是，高纵横比的一维纳米金属材料（metal nanowires）在可拉伸设备中应用最为广泛，因为它们能够在相对较低的浓度下形成并保持其渗流网络，即使是在大的应变下。 当这些复合材料处于应变状态时，可以保持高水平的导电性，因为一维导电填料倾向于相互滑动，而不是被折断，因此渗流通道被保留下来。 此外，当一维导电填料与二维或三维纳米颗粒混合时，导体在应变下的电阻可以得到进一步改善。 </p>
+<p>由于银的高氧化倾向，银纳米线在空气中暴露时很容易被氧化，这限制了它们的长期应用。 此外，银在生物环境中的高腐蚀性阻碍了它们在生物电子学中的应用。</p>
+</blockquote>
+<p><strong>金属材料的导电性非常好，1维纳米金属导线是一个非常重要的考虑对象，可以进行纺织形成类似于叶脉的结构进行多层叠加。</strong></p>
+<h4 id="_10">碳基材料<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<p>主要包括：碳纳米管(CNTs)，石墨烯(Graphene)，碳黑(Carbon Black)等...
+化学稳定性、生物兼容性好，并且具有良好的电学和力学性质。</p>
+<h5 id="cnts">碳纳米管CNTs<a class="headerlink" href="#cnts" title="Permanent link">&para;</a></h5>
+<blockquote>
+<p>一维碳纳米管具有良好的各向异性和导电性，是目前应用最广泛的填料类型。碳纳米管的另一个优点是，它们可以通过溶液处理技术直接沉积在柔性或可拉伸的基底上，这对其商业工艺至关重要。旋涂、浸涂、喷涂、真空过滤和喷墨打印是最常用的溶液沉积技术。许多新技术，如接触和滚动印刷、机械剪切技术、Langmuire-Blodgett (LB)方法，已被开发用于实现大规模定向高性能碳纳米管薄膜。此外，能够将一维纳米材料排列成互联网络或设计好的微图案的自组装技术已经成为其在器件设计中的应用的关键问题。目前应用最广泛的一维纳米材料调直技术包括三相接触线操纵法、Langmuir-Blodgett薄膜法和溶液机械剪切法。</p>
+</blockquote>
+<h5 id="graphene">石墨烯Graphene<a class="headerlink" href="#graphene" title="Permanent link">&para;</a></h5>
+<blockquote>
+<p>石墨烯是一种sp2杂化碳原子厚度的二维材料，是世界上最坚固、最硬、最薄的材料，也是一种优秀的电子导体，是构建压力传感器的另一种理想的替代敏感层材料。根据其加工技术和性能，石墨烯可以用作导体或半导体。化学去角质、机械去角质和CVD技术是最受欢迎的加工技术:化学去角质包括液体氧化-还原工艺，这导致了低成本石墨烯片材的大规模生产。这些产品与真空过滤、旋涂、喷涂、浸涂和喷墨印刷等溶液加工技术兼容，这些技术是大规模生产的关键要素。但是在化学处理过程中会引入大量的缺陷，从而导致电学性能和光学性能的降低。机械剥离，包括声波和高剪切混合技术，是另一种大规模生产无缺陷石墨烯纳米片的可扩展方法。CVD法可以在金属或SiC表面生长出具有优良电子特性的大尺寸高质量石墨烯薄膜。然而，当将这种薄膜转移到软基底上时，可能会引入污染物和缺陷，这限制了它的应用。</p>
+</blockquote>
+<h3 id="_11">电极层<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>柔性传感器的电极并没有想象的那么简单，而是也要考虑可拉伸性的问题。<strong>理想的可拉伸电极材料能在大应变下保持高导电性，并具有良好的稳定性。</strong></p>
+<h4 id="hydrogel">水凝胶hydrogel<a class="headerlink" href="#hydrogel" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>由于其高拉伸性、透明度和良好的生物相容性，水凝胶有望在智能机器人和可穿戴电子设备等应用中被使用。通常，水凝胶含有高度弹性的聚合物网络和水。由于液态水可以传导离子，因此水凝胶可以作为一种可拉伸的离子导体。</p>
+<p>然而，水凝胶类离子导体**导电率低**、封装困难，限制了其发展，下一代水凝胶器件应具有高精度的图形化和良好的导电性能，才能获得更好的性能。</p>
+</blockquote>
+<p><strong>水凝胶导电率低不满足我们要求的电极电阻尽可能小。</strong></p>
+<h4 id="_12">金属材料<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>此外，特定设计的金属电极材料适合于可拉伸电子器件，如PI衬底上的Au，可拉伸材料上的Ag或Cu等。</p>
+</blockquote>
+<h4 id="_13">基于纤维的材料<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>In addition, fabric-based electrode materials have received much attention due to their good gas permeability and washing ability.</p>
+</blockquote>
+<h3 id="_14">基底层<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>基板材料是可伸缩电子器件的重要组成部分。这些衬底材料的应用更为频繁，包括聚二甲基硅氧烷(PDMS)、嵌段共聚物(BC)弹性体、自修复材料、水凝胶和UV交联材料。</p>
+<h2 id="microstructures">Microstructures<a class="headerlink" href="#microstructures" title="Permanent link">&para;</a></h2>
+
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Homepage" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Homepage
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E6%9C%80%E4%BD%B3%E5%8E%8B%E9%98%BB%E6%9B%B2%E9%9D%A2%E8%AE%BE%E8%AE%A1/" class="md-footer__link md-footer__link--next" aria-label="Next: 最佳压阻曲面设计" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              最佳压阻曲面设计
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.2ab50757.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

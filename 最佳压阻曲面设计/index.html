@@ -1,0 +1,847 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.4">
+    
+    
+      
+        <title>最佳压阻曲面设计 - Kilbert's Home</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6b80c2a2.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CIBM+Plex+Serif:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"IBM Plex Serif"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Kilbert&#39;s Home" class="md-header__button md-logo" aria-label="Kilbert's Home" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Kilbert's Home
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              最佳压阻曲面设计
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Homepage
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../Notes/" class="md-tabs__link">
+      压阻传感器
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      最佳压阻曲面设计
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Kilbert&#39;s Home" class="md-nav__button md-logo" aria-label="Kilbert's Home" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Kilbert's Home
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Homepage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Notes/" class="md-nav__link">
+        压阻传感器
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          最佳压阻曲面设计
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        最佳压阻曲面设计
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    金字塔设计的基本优化方程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fg" class="md-nav__link">
+    具体的\(f,g\)
+  </a>
+  
+    <nav class="md-nav" aria-label="具体的\(f,g\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fvarepsilon" class="md-nav__link">
+    关于\(f(\varepsilon)\)
+  </a>
+  
+    <nav class="md-nav" aria-label="关于\(f(\varepsilon)\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    应变模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    简单的恒定模量模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mooneyrivlin" class="md-nav__link">
+    Mooney–Rivlin模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ogden" class="md-nav__link">
+    Ogden模型
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gvarepsilon" class="md-nav__link">
+    关于\(g(\varepsilon)\)
+  </a>
+  
+    <nav class="md-nav" aria-label="关于\(g(\varepsilon)\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    简单的恒面电导率假设
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    优化算法
+  </a>
+  
+    <nav class="md-nav" aria-label="优化算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    采用离散化的方法进行优化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    优化目标函数
+  </a>
+  
+    <nav class="md-nav" aria-label="优化目标函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    最高线性度
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    金字塔设计的基本优化方程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fg" class="md-nav__link">
+    具体的\(f,g\)
+  </a>
+  
+    <nav class="md-nav" aria-label="具体的\(f,g\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fvarepsilon" class="md-nav__link">
+    关于\(f(\varepsilon)\)
+  </a>
+  
+    <nav class="md-nav" aria-label="关于\(f(\varepsilon)\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    应变模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    简单的恒定模量模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mooneyrivlin" class="md-nav__link">
+    Mooney–Rivlin模型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ogden" class="md-nav__link">
+    Ogden模型
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gvarepsilon" class="md-nav__link">
+    关于\(g(\varepsilon)\)
+  </a>
+  
+    <nav class="md-nav" aria-label="关于\(g(\varepsilon)\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    简单的恒面电导率假设
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    优化算法
+  </a>
+  
+    <nav class="md-nav" aria-label="优化算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    采用离散化的方法进行优化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    优化目标函数
+  </a>
+  
+    <nav class="md-nav" aria-label="优化目标函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    最高线性度
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<p>[toc]</p>
+<h1 id="_1">最佳压阻曲面设计<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">金字塔设计的基本优化方程<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>我们假设共计有<span class="arithmatex">\(N*N\)</span>个小金字塔<span class="arithmatex">\((N&gt;&gt;1)\)</span>，其阵列间距为<span class="arithmatex">\(a\)</span>，则总面积为：
+$$
+S = (aN)^2 
+$$</p>
+<p>设金字塔最大高度为<span class="arithmatex">\(H\)</span>，高度为<span class="arithmatex">\(h = \lambda H\)</span>的金字塔的概率密度函数为<span class="arithmatex">\(\rho(\lambda)\)</span>。概率密度函数应当满足归一化条件：
+$$
+\int_0^{1}\rho(\lambda)d\lambda=1 \tag{1.1}
+$$</p>
+<p>由量纲分析或者相似性分析，可以得到如下假设：
+1. 一个高度为<span class="arithmatex">\(h\)</span>的金字塔在高度形变为<span class="arithmatex">\(\Delta\)</span>时的反作用力与**尺度的平方成正比**，并且比例系数只是相对变形<span class="arithmatex">\(\varepsilon = \Delta / h\)</span>的某个函数<span class="arithmatex">\(f(\varepsilon)\)</span>，即：<span class="arithmatex">\(<span class="arithmatex">\(F = p_0 \cdot h^2 \cdot f(\varepsilon)\)</span>\)</span> <span class="arithmatex">\(p_0\)</span>为常数，具有压力/应力的量纲[N/m^2]。
+2. 一个高度为<span class="arithmatex">\(h\)</span>的金字塔在高度形变为<span class="arithmatex">\(\Delta\)</span>时的接触电导与**尺度的平方成正比**，并且比例系数只是相对变形<span class="arithmatex">\(\varepsilon = \Delta / h\)</span>的某个函数<span class="arithmatex">\(g(\varepsilon)\)</span>，即：<span class="arithmatex">\(<span class="arithmatex">\(G = \sigma_0 \cdot h^2 \cdot g(\varepsilon)\)</span>\)</span> <span class="arithmatex">\(\sigma_0\)</span>为常数，具有面电导的量纲[S/m^2]。</p>
+<p>更详细的讨论见<a href="#moreinfo">第二节</a>。</p>
+<p>假设上板和下板间距为<span class="arithmatex">\(x = \Lambda H(\Lambda&lt;1)\)</span>，则对于高度为<span class="arithmatex">\(h = \lambda H(\lambda&gt;\Lambda)\)</span>的金字塔，其形变为：
+$$
+\Delta = (\lambda - \Lambda) H
+$$
+其相对变形为：
+$$
+\varepsilon = \frac{\Delta}{h} = 1 - \frac{\Lambda}{\lambda}
+$$</p>
+<p>高度<span class="arithmatex">\(h\)</span>小于<span class="arithmatex">\(x\)</span>的金字塔（<span class="arithmatex">\(\lambda&lt;\Lambda\)</span>）不形变，也不提供反作用力和接触通路，这说明函数<span class="arithmatex">\(f,g\)</span>满足性质：
+$$
+f(\varepsilon) = 0, g(\varepsilon) = 0, \text{if }\varepsilon \leqslant 0
+$$</p>
+<p><strong>我们不考虑由于分布位置不同导致的应力分布，而简单认为总的作用力是每一个金字塔变形后应力的简单代数和</strong>，即：
+<span class="arithmatex">\(<span class="arithmatex">\(F(\Lambda) = \int_0^1[\rho(\lambda)d\lambda \cdot N^2]*p_0 \cdot (\lambda H)^2 \cdot f(1 - \frac{\Lambda}{\lambda}) = p_0 N^2 H^2 \int_0^1 \lambda^2 f(1 - \frac{\Lambda}{\lambda}) \rho(\lambda) d\lambda \tag{1.2}\)</span>\)</span></p>
+<p>对应施加压强为：
+$$
+p(\Lambda) = F/S = \frac{p_0 H<sup>2}{a</sup>2} \int_0<sup>{1}\lambda</sup>2 f(1 - \frac{\Lambda}{\lambda}) \rho(\lambda) d\lambda \tag{1.3}
+$$</p>
+<p>同理可得，此时形成的接触电导为：
+$$
+G(\Lambda) = \sigma_0 N^2 H^2 \int_0^1 \lambda^2 g(1 - \frac{\Lambda}{\lambda}) \rho(\lambda)d\lambda \tag{1.4}
+$$</p>
+<p>优化问题的目标往往是灵敏度，即接触电导对于压强的导数：
+$$
+\frac{dG}{dp} = \frac{dG}{d\Lambda}/\frac{dp}{d\Lambda} 
+$$</p>
+<p>将(1.3)和(1.4)对<span class="arithmatex">\(\Lambda\)</span>求导，得到：
+$$
+\frac{dp}{d\Lambda} = -\frac{p_0 H<sup>2}{a</sup>2} \int_0^{1}\lambda f^{'}(1 - \frac{\Lambda}{\lambda}) \rho(\lambda) d\lambda \tag{1.5}
+$$</p>
+<div class="arithmatex">\[
+\frac{dG}{d\Lambda} = -\sigma_0 N^2 H^2 \int_0^1 \lambda g^{'}(1 - \frac{\Lambda}{\lambda}) \rho(\lambda)d\lambda \tag{1.6}
+\]</div>
+<p>所以，将(1.6)除以(1.5)，得到：
+$$
+\frac{dG}{dp} = (Na)^2 \frac{{\sigma_0}}{p_0}     \frac{\int_0^{1}\lambda f^{'}(1 - \frac{\Lambda}{\lambda}) \rho(\lambda) d\lambda}{\int_0^1 \lambda g^{'}(1 - \frac{\Lambda}{\lambda}) \rho(\lambda)d\lambda} \tag{1.7}
+$$</p>
+<p>因此，若设目标优化函数（例如，在某一区间内的平均灵敏度）为<span class="arithmatex">\(T(G,p,x,dG/dp,...)\)</span>，优化问题可以表示为：
+$$
+\begin{equation}
+\left{
+\begin{aligned}
+&amp;\text{Given:}G,p,F,f,g,dG/dp...,\
+&amp;\text{constraint:}\int_0^{1}\rho(\lambda)d\lambda=1,\
+&amp;\text{optim: }\arg\max\limits_{\phi} \quad T(G,p,x,dG/dp,...)
+\end{aligned}
+\right.
+\tag{1.8}
+\end{equation}
+$$</p>
+<h2 id="fg"><a id="moreinfo">具体的<span class="arithmatex">\(f,g\)</span></a><a class="headerlink" href="#fg" title="Permanent link">&para;</a></h2>
+<h3 id="fvarepsilon">关于<span class="arithmatex">\(f(\varepsilon)\)</span><a class="headerlink" href="#fvarepsilon" title="Permanent link">&para;</a></h3>
+<p>一个高度为<span class="arithmatex">\(h\)</span>的金字塔在高度形变为<span class="arithmatex">\(\Delta\)</span>时的反作用力与**尺度的平方成正比**，并且比例系数只是相对变形<span class="arithmatex">\(\varepsilon = \Delta / h\)</span>的某个函数<span class="arithmatex">\(f(\varepsilon)\)</span>，即：<span class="arithmatex">\(<span class="arithmatex">\(F = p_0 \cdot h^2 \cdot f(\varepsilon)\)</span>\)</span> <span class="arithmatex">\(p_0\)</span>为常数，具有压力/应力的量纲[N/m^2]。下面我们进一步讨论具体表达式。</p>
+<p>文献<a href="https://onlinelibrary.wiley.com/doi/10.1002/admt.202100634">《Analytical Model of Micropyramidal Capacitive Pressure Sensors and Machine-Learning-Assisted Design》</a>中建立了关于金字塔微结构的应力-应变理论模型，在这里简要进行重述。</p>
+<p>引入金字塔结构参数：
+1. <span class="arithmatex">\(r\)</span>：顶部宽度和底部宽度的比值
+2. <span class="arithmatex">\(\theta\)</span>：金字塔倾角</p>
+<p>初始时，金字塔底部宽度<span class="arithmatex">\(b_{l0}\)</span>，顶部宽度<span class="arithmatex">\(a_{l0}\)</span>，高度<span class="arithmatex">\(h_0\)</span>之间满足关系：
+$$
+\begin{aligned}
+    &amp;a_{l0} = rb_{l0}\
+&amp;h_{0} = \frac{b_{l0}-a_{l0}}{2}\tan\theta = (1-r)\frac{b_{l0}}{2}\tan\theta
+\end{aligned}
+$$</p>
+<p>定义：
+$$
+r_{\text{eff}} = \frac{r}{1-r}
+$$</p>
+<p>首先将金字塔转化为利用**MDR方法**将轴对称的问题转化为平面问题，转化后的曲面为：
+$$
+g(x) = 
+\left{
+\begin{aligned}
+    &amp;0, \text{if }|x|&lt;a_0\
+    &amp;|x|\tan\theta\arccos(a_0/|x|)  , \text{else}
+\end{aligned}
+\right.
+$$</p>
+<h4 id="_3">应变模型<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<p>位移为<span class="arithmatex">\(d\)</span>，则应变为：
+$$
+\varepsilon = \frac{d}{h_0} 
+$$
+一般情况下，引入修正项可以得到应变的参数方程(参数<span class="arithmatex">\(\alpha=a_0/a&lt;1\)</span>)：
+$$
+\varepsilon(\alpha) = r_{\text{eff}}\cdot\frac{\arccos\alpha}{\alpha} - \frac{k_0}{2}\frac{r_{\text{eff}}<sup>2}{\tan\theta}\frac{1-\alpha</sup>2}{\alpha^2}  \tag{2.1}
+$$</p>
+<h4 id="_4">简单的恒定模量模型<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<p>力关于<span class="arithmatex">\(\alpha\)</span>的参数方程：
+$$
+f(\varepsilon(\alpha)) = \frac{F}{h_0^2} = \frac{E}{1-\nu<sup>2}\frac{r_{\text{eff}}</sup>2}{\tan\theta}\frac{\arccos\alpha+\alpha\sqrt{1-\alpha<sup>2}}{\alpha</sup>2}
+$$</p>
+<h4 id="mooneyrivlin">Mooney–Rivlin模型<a class="headerlink" href="#mooneyrivlin" title="Permanent link">&para;</a></h4>
+<p>使用Mooney–Rivlin模型时，先对<span class="arithmatex">\(\xi(x)\)</span>做无量纲处理，令<span class="arithmatex">\(\phi = x/a\)</span>：
+$$
+\Xi(\phi,\alpha) = \frac{\xi(x)}{h_0} = 1 - r_{\text{eff}}\cdot\frac{\phi}{\alpha}\cdot\arccos\frac{\alpha}{\phi}
+$$
+再对力的表达式进行无量纲化处理：
+$$
+f_{MR}(\varepsilon(\alpha)) = \frac{F}{h_0^2} = \frac{2r_{\text{eff}}}{\alpha\tan\theta}\int_0^1\left[c_{10}\Xi(1,\alpha)+c_{01}\Xi(\phi,\alpha) \right]\left[\frac{\Xi(\phi,\alpha)<sup>3}{\Xi(1,\alpha)</sup>3}-1 \right]d\phi
+$$</p>
+<h4 id="ogden">Ogden模型<a class="headerlink" href="#ogden" title="Permanent link">&para;</a></h4>
+<p>使用Ogden模型时，
+$$
+f_{Og}(\varepsilon(\alpha)) = \frac{F}{h_0^2} = \frac{2r_{\text{eff}}}{\alpha\tan\theta}\int_0^1 \sum_{i=1}^3 \mu_i \left[\frac{\Xi(\phi,\alpha)<sup 1_frac_Alpha_i="1+\frac{\Alpha_i">{2+\frac{\Alpha_i}{2}}}{\Xi(1,\alpha)</sup>{2}}} - \frac{\Xi(\phi,\alpha)<sup 1-_Alpha_i="1-\Alpha_i">{2-\Alpha_i}}{\Xi(1,\alpha)</sup>} \right] d\phi
+$$</p>
+<h3 id="gvarepsilon">关于<span class="arithmatex">\(g(\varepsilon)\)</span><a class="headerlink" href="#gvarepsilon" title="Permanent link">&para;</a></h3>
+<p>一个高度为<span class="arithmatex">\(h\)</span>的金字塔在高度形变为<span class="arithmatex">\(\Delta\)</span>时的接触电导与**尺度的平方成正比**，并且比例系数只是相对变形<span class="arithmatex">\(\varepsilon = \Delta / h\)</span>的某个函数<span class="arithmatex">\(g(\varepsilon)\)</span>，即：<span class="arithmatex">\(<span class="arithmatex">\(G = \sigma_0 \cdot h^2 \cdot g(\varepsilon)\)</span>\)</span> <span class="arithmatex">\(\sigma_0\)</span>为常数，具有面电导的量纲[S/m^2]。现在来讨论<span class="arithmatex">\(g(\varepsilon)\)</span>应该具有的形式。</p>
+<p>接触电导可以表示为接触面积<span class="arithmatex">\(S_{\text{contact}}\)</span>和面电导率<span class="arithmatex">\(\sigma_{\text{area}}\)</span>的乘积，由于尺度效应已经被提取出来，所以此处只考虑相对变化比率的问题。</p>
+<p><strong>接触面积应只是相对变形的函数，即：</strong>
+$$
+S_{\text{contact}} = S_{\text{contact}}(\varepsilon)
+$$</p>
+<p><strong>面电导率应只是接触应力的函数，而接触应力又只是相对变形的函数，所以也有：</strong>
+$$
+\sigma_{\text{area}} = \sigma_{\text{area}}(p_{\text{contact}}(\varepsilon)) = \sigma_{\text{area}}(\varepsilon)
+$$</p>
+<h4 id="_5">简单的恒面电导率假设<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p>假设只考虑恒定的面电导率，则：
+<span class="arithmatex">\(<span class="arithmatex">\(g(\varepsilon(\alpha)) =  \frac{1}{\alpha}\)</span>\)</span></p>
+<h2 id="_6">优化算法<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>我们将采用数值方法进行优化。假设我们以及获得了以数值向量形式存储的函数表<span class="arithmatex">\(F(\varepsilon),p(\varepsilon),G(\varepsilon),G(p)\)</span>等，则可以通过插值获得近似的连续函数。</p>
+<p>目标是优化概率密度函数<span class="arithmatex">\(\rho(\lambda)\)</span>，我们将其展开为定义在区间(0,1)上的完备基函数的线性组合，并截取前N+1个（例如<span class="arithmatex">\(N=10\)</span>）：
+$$
+\rho(\lambda) = \sum_{i=1}^{N+1} c_i \cdot L(\lambda)
+$$
+系数<span class="arithmatex">\(c_i\)</span>(<span class="arithmatex">\(i=1\sim N\)</span>)是优化目标，最后一个系数<span class="arithmatex">\(c_{i+1}\)</span>用于保证满足归一化要求。</p>
+<h3 id="_7">采用离散化的方法进行优化<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>假设金字塔高度分布在M个等间距的高度中，即：
+$$
+\lambda = [\frac{1}{M}, \frac{2}{M}, \frac{3}{M}..., \frac{M-1}{M},1]
+$$
+对应的高度占百分比也表示为M维向量:
+$$
+\mathbf{\rho} = [\rho_1,\rho_2,\rho_3,...,\rho_{M-1},\rho_M]
+$$
+根据归一化条件：
+$$
+\sum_{i=1}^{M} \rho_i = 1
+$$</p>
+<p>设<span class="arithmatex">\(\Lambda = \frac{j}{M}H\)</span>：
+$$
+p(j) = \frac{p_0H<sup>2}{a</sup>2}\sum_{i=1}<sup>M\lambda_i</sup>2 \cdot \rho_i \cdot f(1-\frac{j}{i})
+$$
+$$
+G(j) = \sigma_0N<sup>2H</sup>2\sum_{i=1}<sup>M\lambda_i</sup>2 \cdot \rho_i \cdot g(1-\frac{j}{i})
+$$</p>
+<h3 id="_8">优化目标函数<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h4 id="_9">最高线性度<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<p>通过差分的方法计算导数<span class="arithmatex">\(dG/dp\)</span></p>
+
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Notes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 压阻传感器" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              压阻传感器
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.2ab50757.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
